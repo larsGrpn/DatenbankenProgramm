@@ -1,0 +1,156 @@
+object FBaukasten: TFBaukasten
+  Left = 0
+  Top = 0
+  Caption = 'Protein-Bibliothek'
+  ClientHeight = 299
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = VorbereitungClick
+  PixelsPerInch = 96
+  TextHeight = 13
+  object LHilfe: TLabel
+    Left = 504
+    Top = 273
+    Width = 123
+    Height = 18
+    Caption = 'Brauchen Sie Hilfe?'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clHotLight
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnClick = LHilfeClick
+  end
+  object Label3: TLabel
+    Left = 8
+    Top = 144
+    Width = 121
+    Height = 15
+    Caption = 'Eingabe ihrer Antwort'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object LRAntworten: TLabel
+    Left = 248
+    Top = 246
+    Width = 105
+    Height = 13
+    Caption = 'Richtige Antworten: 0'
+  end
+  object LFAntworten: TLabel
+    Left = 248
+    Top = 278
+    Width = 103
+    Height = 13
+    Caption = 'Falsche Antworten: 0'
+  end
+  object Label4: TLabel
+    Left = 467
+    Top = 223
+    Width = 101
+    Height = 23
+    Caption = 'Fortschritt'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Vorbereitung: TLabel
+    Left = 416
+    Top = 288
+    Width = 3
+    Height = 13
+    OnClick = VorbereitungClick
+  end
+  object BZurueck: TButton
+    Left = 8
+    Top = 256
+    Width = 185
+    Height = 35
+    Caption = 'Zur'#252'ck zum Men'#252
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -15
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    OnClick = BZurueckClick
+  end
+  object EAusgabe: TEdit
+    Left = 8
+    Top = 117
+    Width = 619
+    Height = 21
+    Enabled = False
+    TabOrder = 1
+  end
+  object BErzeugen: TButton
+    Left = 8
+    Top = 85
+    Width = 619
+    Height = 25
+    Caption = 'Neue Nukleotidsequenz'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 20
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 2
+    OnClick = BErzeugenClick
+  end
+  object Panel1: TPanel
+    Left = 8
+    Top = 8
+    Width = 619
+    Height = 41
+    Caption = 'Baukasten-Funktion'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 45
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object EAntwort: TEdit
+    Left = 8
+    Top = 165
+    Width = 609
+    Height = 21
+    TabOrder = 4
+    TextHint = 'Geben sie hier ihre Antwort ein'
+  end
+  object BBestaetigen: TButton
+    Left = 8
+    Top = 192
+    Width = 609
+    Height = 25
+    Caption = 'Eingabe best'#228'tigen'
+    TabOrder = 5
+    OnClick = BBestaetigenClick
+  end
+  object PFortschritt: TProgressBar
+    Left = 467
+    Top = 249
+    Width = 150
+    Height = 17
+    Max = 10
+    Position = 6
+    TabOrder = 6
+  end
+end

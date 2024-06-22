@@ -1,0 +1,40 @@
+unit UInformatikProjektSuchmaschineTutorial;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TFSuchmaschineTutorial = class(TForm)
+    Button1: TButton;
+    BZurueckHauptmenue: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure BZurueckHauptmenueClick(Sender: TObject);
+  private
+    { Private-Deklarationen }
+  public
+    { Public-Deklarationen }
+  end;
+
+var
+  FSuchmaschineTutorial: TFSuchmaschineTutorial;
+
+implementation
+ uses UInformatikProjektSuchmaschine, UInformatikProjektHauptmenue;
+{$R *.dfm}
+
+procedure TFSuchmaschineTutorial.Button1Click(Sender: TObject);
+begin
+Hide;
+FSuchmaschine.Show;
+end;
+
+procedure TFSuchmaschineTutorial.BZurueckHauptmenueClick(Sender: TObject);
+begin
+Hide;
+FHauptmenue.Show;
+end;
+
+end.

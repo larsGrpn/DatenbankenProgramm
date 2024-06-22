@@ -1,0 +1,69 @@
+unit UInformatikProjektSuchmaschine;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
+  Vcl.ComCtrls,
+  Vcl.Imaging.pngimage;
+
+type
+  TFSuchmaschine = class(TForm)
+    ESuchfeld: TEdit;
+    Panel1: TPanel;
+    BSuchen: TButton;
+    Label1: TLabel;
+    BZurueck: TButton;
+    MErgebnis: TMemo;
+    procedure Label1Click(Sender: TObject);
+    procedure BZurueckClick(Sender: TObject);
+    procedure BSuchenClick(Sender: TObject);
+  private
+    { Private-Deklarationen }
+  public
+    { Public-Deklarationen }
+  end;
+
+var
+  FSuchmaschine: TFSuchmaschine;
+
+implementation
+
+uses UInformatikProjektHauptmenue, UInformatikProjektSuchmaschineTutorial;
+
+
+{$R *.dfm}
+
+procedure TFSuchmaschine.BSuchenClick(Sender: TObject);
+var
+  i: String;
+begin
+  i := ESuchfeld.Text;
+  MErgebnis.Text := '';
+  i := LowerCase(i);
+
+  MErgebnis.Font.Color := clBlack;
+  MErgebnis.Lines.LoadFromFile('\Infoprojekt\Datenbanken\Suchmaschine\' + i + '.txt');
+  if MErgebnis.Lines.Text = '' then
+  begin
+    MErgebnis.Font.Color := clRed;
+    MErgebnis.Lines.Text := 'Es wurde keine Aminosäure mit dem Namen ' + i + ' gefunden';
+  end;
+end;
+
+procedure TFSuchmaschine.BZurueckClick(Sender: TObject);
+begin
+  Hide;
+  FHauptmenue.Show;
+end;
+
+procedure TFSuchmaschine.Label1Click(Sender: TObject);
+begin
+  Hide;
+  FSuchmaschineTutorial.Show;
+end;
+
+end.
+

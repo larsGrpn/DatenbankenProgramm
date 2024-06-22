@@ -1,0 +1,52 @@
+unit UInformatikProjektBaukasten;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.WinXCtrls,
+  Vcl.ExtCtrls, Vcl.ComCtrls;
+
+type
+  TFBaukasten = class(TForm)
+    BZurueck: TButton;
+    Label1: TLabel;
+    EAusgabe: TEdit;
+    Button1: TButton;
+    Panel1: TPanel;
+    ToggleSwitch1: TToggleSwitch;
+    Label2: TLabel;
+    Label3: TLabel;
+    EAntwort: TEdit;
+    Button2: TButton;
+    LRAntworten: TLabel;
+    LFAntworten: TLabel;
+    ProgressBar1: TProgressBar;
+    procedure BZurueckClick(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
+  private
+    { Private-Deklarationen }
+  public
+    { Public-Deklarationen }
+  end;
+
+var
+  FBaukasten: TFBaukasten;
+
+implementation
+uses UInformatikProjektHauptmenue, UInformatikProjektBaukastenTutorial;
+{$R *.dfm}
+
+procedure TFBaukasten.BZurueckClick(Sender: TObject);
+begin
+Hide;
+FHauptmenue.Show;
+end;
+
+procedure TFBaukasten.Label1Click(Sender: TObject);
+begin
+  Hide;
+  FBaukastenTutorial.Show;
+end;
+
+end.

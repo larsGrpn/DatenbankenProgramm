@@ -1,0 +1,64 @@
+unit UInformatikProjektHauptmenue;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TFHauptmenue = class(TForm)
+    Panel1: TPanel;
+    BSuchmaschine: TButton;
+    BBaukasten: TButton;
+    BTutorial: TButton;
+    BCredits: TButton;
+    BEnde: TButton;
+    procedure BEndeClick(Sender: TObject);
+    procedure BSuchmaschineClick(Sender: TObject);
+    procedure BBaukastenClick(Sender: TObject);
+    procedure BTutorialClick(Sender: TObject);
+    procedure BCreditsClick(Sender: TObject);
+  private
+    { Private-Deklarationen }
+  public
+    { Public-Deklarationen }
+  end;
+
+var
+  FHauptmenue: TFHauptmenue;
+
+implementation
+uses UInformatikProjektSuchmaschine, UInformatikProjektBaukasten, UInformatikProjektTutorialUebersicht, UInformatikProjektCredits;
+{$R *.dfm}
+
+procedure TFHauptmenue.BBaukastenClick(Sender: TObject);
+begin
+Hide;
+FBaukasten.Show;
+end;
+
+procedure TFHauptmenue.BCreditsClick(Sender: TObject);
+begin
+  Hide;
+  FCredits.Show
+end;
+
+procedure TFHauptmenue.BEndeClick(Sender: TObject);
+begin
+close;
+end;
+
+procedure TFHauptmenue.BSuchmaschineClick(Sender: TObject);
+begin
+  Hide;
+  FSuchmaschine.Show;
+end;
+
+procedure TFHauptmenue.BTutorialClick(Sender: TObject);
+begin
+Hide;
+FTutorialUebersicht.Show;
+end;
+
+end.

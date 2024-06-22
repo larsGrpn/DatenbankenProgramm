@@ -1,0 +1,16 @@
+program PInformatikProjekt;
+
+uses
+  Vcl.Forms,
+  UInformatikProjektHauptmenue in 'UInformatikProjektHauptmenue.pas' {FHauptmenue},
+  UInformatikProjektSuchmaschine in 'UInformatikProjektSuchmaschine.pas' {FSuchmaschine};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFHauptmenue, FHauptmenue);
+  Application.CreateForm(TFSuchmaschine, FSuchmaschine);
+  Application.Run;
+end.

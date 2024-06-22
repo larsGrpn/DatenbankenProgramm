@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.701,M:\Delphi\InformatikProjekt\Unit2.dfm=M:\Delphi\InformatikProjekt\USuchmaschineTutorial.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.514,M:\Delphi\InformatikProjekt\Unit1.pas=M:\Delphi\InformatikProjekt\UInformatikProjektSuchmaschine.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.117,=M:\Delphi\InformatikProjekt\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.435,M:\Delphi\Unit1.dfm=M:\Delphi\InformatikProjekt\UInformatikProjektHauptmenue.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.280,M:\Delphi\InformatikProjekt\Unit2.dfm=M:\Delphi\InformatikProjekt\UInformatikProjektBaukastenTutorial.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.695,M:\Delphi\InformatikProjekt\Unit2.dfm=M:\Delphi\InformatikProjekt\UInformatikProjektBaukasten.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.312,M:\Delphi\InformatikProjekt\Unit1.pas=M:\Delphi\InformatikProjekt\UInformatikProjektCredits.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.251,M:\Delphi\Project1.dproj=M:\Delphi\InformatikProjekt\PInformatikProjekt.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.218,M:\Delphi\InformatikProjekt\USuchmaschineTutorial.pas=M:\Delphi\InformatikProjekt\UInformatikProjektSuchmaschineTutorial.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.628,M:\Delphi\InformatikProjekt\Unit1.pas=M:\Delphi\InformatikProjekt\UInformatikProjektTutorialUebersicht.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.138,=M:\Delphi\InformatikProjekt\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.050,=M:\Delphi\InformatikProjekt\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.701,M:\Delphi\InformatikProjekt\Unit2.pas=M:\Delphi\InformatikProjekt\USuchmaschineTutorial.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.280,M:\Delphi\InformatikProjekt\Unit2.pas=M:\Delphi\InformatikProjekt\UInformatikProjektBaukastenTutorial.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.544,=M:\Delphi\InformatikProjekt\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.013,=M:\Delphi\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.435,M:\Delphi\Unit1.pas=M:\Delphi\InformatikProjekt\UInformatikProjektHauptmenue.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.218,M:\Delphi\InformatikProjekt\USuchmaschineTutorial.dfm=M:\Delphi\InformatikProjekt\UInformatikProjektSuchmaschineTutorial.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.312,M:\Delphi\InformatikProjekt\Unit1.dfm=M:\Delphi\InformatikProjekt\UInformatikProjektCredits.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.514,M:\Delphi\InformatikProjekt\Unit1.dfm=M:\Delphi\InformatikProjekt\UInformatikProjektSuchmaschine.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.628,M:\Delphi\InformatikProjekt\Unit1.dfm=M:\Delphi\InformatikProjekt\UInformatikProjektTutorialUebersicht.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.224,=M:\Delphi\InformatikProjekt\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.695,M:\Delphi\InformatikProjekt\Unit2.pas=M:\Delphi\InformatikProjekt\UInformatikProjektBaukasten.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.112,=M:\Delphi\InformatikProjekt\Unit2.pas</Transaction>
+  </Transactions>
+</BorlandProject>

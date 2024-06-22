@@ -1,0 +1,124 @@
+unit UInformatikProjektBaukasten;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.WinXCtrls,
+  Vcl.ExtCtrls, Vcl.ComCtrls;
+
+type
+  TFBaukasten = class(TForm)
+    BZurueck: TButton;
+    LHilfe: TLabel;
+    EAusgabe: TEdit;
+    BErzeugen: TButton;
+    Panel1: TPanel;
+    TModus: TToggleSwitch;
+    Label2: TLabel;
+    Label3: TLabel;
+    EAntwort: TEdit;
+    BBestaetigen: TButton;
+    LRAntworten: TLabel;
+    LFAntworten: TLabel;
+    PFortschritt: TProgressBar;
+    Label4: TLabel;
+    Vorbereitung: TLabel;
+    procedure BZurueckClick(Sender: TObject);
+    procedure LHilfeClick(Sender: TObject);
+    procedure BErzeugenClick(Sender: TObject);
+    procedure VorbereitungClick(Sender: TObject);
+  private
+    { Private-Deklarationen }
+  public
+    { Public-Deklarationen }
+  end;
+
+var
+  FBaukasten: TFBaukasten;
+  aminosaeure, index: integer;
+  leucin: array[0..5] of string;            //leu
+  isoleucin: array[0..2] of string;         //ile
+  valin: array[0..3] of string;             //val
+  lysin: array[0..1] of string;             //lys
+  methionin: array[0..0] of string;         //met
+  tryptophan: array[0..0] of string;        //trp
+  phenylalanin: array[0..1] of string;      //phe
+  threonin: array[0..3] of string;          //thr
+  arginin: array[0..5] of string;           //arg
+  cystein: array[0..1] of string;           //cys
+  histidin: array[0..1] of string;          //his
+  tyrosin: array[0..1] of string;           //tyr
+  asparaginsaeure: array[0..1] of string;   //asp
+  glutamin: array[0..1] of string;          //gln
+  alanin: array[0..3] of string;            //ala
+  asparagin: array[0..1] of string;         //asn
+  glutaminsaeure: array[0..1] of string;    //glu
+  glycin: array[0..3] of string;            //gly
+  prolin: array[0..3] of string;            //pro
+  serin: array[0..5] of string;             //ser
+  leucinstring, isoleucinstring, valinstring, lysinstring, methioninstring, tryptophanstring, phenylalaninstring, threoninstring, argininstring: string;
+  cysteinstring, histidinstring, tyrosinstring, asparaginsaeurestring, glutaminstring, alaninstring, asparaginstring, glutaminsaeurestring, glycinstring, prolinstring, serinstring : string;
+implementation
+
+uses UInformatikProjektHauptmenue, UInformatikProjektBaukastenTutorial;
+{$R *.dfm}
+
+procedure TFBaukasten.BErzeugenClick(Sender: TObject);
+
+begin
+PFortschritt.Position := 0;
+  if TModus.State = tssOn then
+  begin
+    aminosaeure := Random(20);
+    case aminosaeure of
+      0:
+        begin
+
+        end;
+    end;
+  end
+  else
+  begin
+
+  end;
+end;
+
+procedure TFBaukasten.BZurueckClick(Sender: TObject);
+begin
+  Hide;
+  FHauptmenue.Show;
+end;
+
+procedure TFBaukasten.LHilfeClick(Sender: TObject);
+begin
+  Hide;
+  FBaukastenTutorial.Show;
+end;
+
+procedure TFBaukasten.VorbereitungClick(Sender: TObject);
+begin
+  leucinstring := ' UUA UUG';
+  isoleucinstring := ' AUU AUC AUA';
+  valinstring := ' GUG GUA GUC GUU';
+  lysinstring := ' AAG AAA';
+  methioninstring := ' AUG';
+  tryptophanstring := ' UGG';
+  phenylalaninstring := ' UUU UUC';
+  threoninstring := ' ACG ACA ACC ACU';
+  argininstring := ' AGG AGA CGG CGA CGC CGU';
+  cysteinstring := ' UGU UGC';
+  histidinstring := ' CAU CAC';
+  tyrosinstring := ' UAU UAC';
+  asparaginsaeurestring := ' GAU GAC';
+  glutaminstring := ' CAA CAG';
+  alaninstring := ' GCU GCC GCA GCG';
+  asparaginstring := ' AAC AAU';
+  glutaminsaeurestring := ' GAG GAA';
+  glycinstring := ' GGG GGA GGC GGU';
+  prolinstring := ' CCU CCC CCA CCG';
+  serinstring := ' AGC AGU';
+end;
+
+end.

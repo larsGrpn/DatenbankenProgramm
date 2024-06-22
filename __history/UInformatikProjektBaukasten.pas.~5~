@@ -1,0 +1,96 @@
+unit UInformatikProjektBaukasten;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.WinXCtrls,
+  Vcl.ExtCtrls, Vcl.ComCtrls;
+
+type
+  TFBaukasten = class(TForm)
+    BZurueck: TButton;
+    Label1: TLabel;
+    EAusgabe: TEdit;
+    Button1: TButton;
+    Panel1: TPanel;
+    TModus: TToggleSwitch;
+    Label2: TLabel;
+    Label3: TLabel;
+    EAntwort: TEdit;
+    Button2: TButton;
+    LRAntworten: TLabel;
+    LFAntworten: TLabel;
+    PFortschritt: TProgressBar;
+    Label4: TLabel;
+    procedure BZurueckClick(Sender: TObject);
+    procedure Label1Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+  private
+    { Private-Deklarationen }
+  public
+    { Public-Deklarationen }
+  end;
+
+var
+  FBaukasten: TFBaukasten;
+  aminosaeure, index: integer;
+  leucin: array[0..5] of string;            //leu
+  isoleucin: array[0..2] of string;         //ile
+  valin: array[0..3] of string;             //val
+  lysin: array[0..1] of string;             //lys
+  methionin: array[0..0] of string;         //met
+  tryptophan: array[0..0] of string;        //trp
+  phenylalanin: array[0..1] of string;      //phe
+  threonin: array[0..3] of string;          //thr
+  arginin: array[0..5] of string;           //arg
+  cystein: array[0..1] of string;           //cys
+  histidin: array[0..1] of string;          //his
+  tyrosin: array[0..1] of string;           //tyr
+  asparaginsaeure: array[0..1] of string;   //asp
+  glutamin: array[0..1] of string;          //gln
+  alanin: array[0..3] of string;            //ala
+  asparagin: array[0..1] of string;         //asn
+  glutaminsaeure: array[0..1] of string;    //glu
+  glycin: array[0..3] of string;            //gly
+  prolin: array[0..3] of string;            //pro
+  serin: array[0..5] of string;             //ser
+implementation
+
+uses UInformatikProjektHauptmenue, UInformatikProjektBaukastenTutorial;
+{$R *.dfm}
+
+procedure TFBaukasten.Button1Click(Sender: TObject);
+
+begin
+PFortschritt.Position := 0;
+  if TModus.State = tssOn then
+  begin
+    aminosaeure := Random(20);
+    case aminosaeure of
+      0:
+        begin
+
+        end;
+    end;
+  end
+  else
+  begin
+
+  end;
+end;
+
+procedure TFBaukasten.BZurueckClick(Sender: TObject);
+begin
+  Hide;
+  FHauptmenue.Show;
+end;
+
+procedure TFBaukasten.Label1Click(Sender: TObject);
+begin
+  Hide;
+  FBaukastenTutorial.Show;
+end;
+
+end.
